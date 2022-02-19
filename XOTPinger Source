@@ -1,0 +1,44 @@
+@echo off
+color 0c
+title (XOT )
+echo off & cls
+color 5
+echo.
+ping localhost >nul
+color 02
+set /p IP=[+]-Enter IP:
+echo XOT %Ip%
+echo ===========================================
+:top
+PING  -n 1 %IP% | FIND "TTL="
+IF ERRORLEVEL 1 echo %IP% 
+color 01
+ping -t 2 0 1 127.0.0.1 >nul
+color 02
+ping -t 2 0 1 127.0.0.1 >nul
+color 03
+ping -t 2 0 1 127.0.0.1 >nul
+color 04
+ping -t 2 0 1 127.0.0.1 >nul
+color 05
+ping -t 2 0 1 127.0.0.1 >nul
+color 06 
+ping -t 2 0 1 127.0.0.1 >nul
+color 07
+ping -t 2 0 1 127.0.0.1 >nul
+color 08
+ping -t 2 0 1 127.0.0.1 >nul
+color 09
+ping -t 2 0 1 127.0.0.1 >nul
+color 0A 
+ping -t 2 0 1 127.0.0.1 >nul
+color 0B
+ping -t 2 0 1 127.0.0.1 >nul
+color 0C
+ping -t 2 0 1 127.0.0.1 >nul
+color 0D
+ping -t 2 0 1 127.0.0.1 >nul
+color 0F
+ping -t 2 0 1 127.0.0.1 >nul
+GoTo top
+
